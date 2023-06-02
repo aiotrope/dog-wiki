@@ -102,7 +102,7 @@ async function getDogBreedInfo(breed) {
       }
     );
     jsonData = await res.json();
-  } catch {
+  } catch (error) {
     console.error(error);
   }
   return jsonData;
